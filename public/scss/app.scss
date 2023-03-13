@@ -1,0 +1,80 @@
+.app {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__img{
+    position: relative;
+}
+
+.app__content {
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    align-items: flex-start;
+}
+
+.app__title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 46px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.app__text {
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.015em;
+    color: #6C6C6C;
+    margin-bottom: 65px;
+}
+
+.app__appStore,
+.app__playStore {
+    text-decoration: none;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    padding: 40px 25px 40px 112px;
+    border: 1.5px solid #B5BAE0;
+    border-radius: 25px;
+    position: relative;
+    transition: all .2s linear;
+
+    &:hover{
+        background-color: #B5BAE0;
+    }
+}
+
+.app__appStore {
+    margin-bottom: 26px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(public/img/app/appstore.svg);
+        background-repeat: no-repeat;
+        top: 23px;
+        left: 24px;
+        width: 54px;
+        height: 54px;
+    }
+}
+
+.app__playStore {
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(public/img/app/appgoogle.svg);
+        background-repeat: no-repeat;
+        top: 16px;
+        left: 14px;
+        width: 66px;
+        height: 66px;
+    }
+}
